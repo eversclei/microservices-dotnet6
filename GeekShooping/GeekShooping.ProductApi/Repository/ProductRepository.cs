@@ -10,9 +10,9 @@ namespace GeekShooping.ProductApi.Repository
     public class ProductRepository : IProductRepository
     {
 
-        private readonly SqlServeContext _context;
+        private readonly SqlServerContext _context;
         private IMapper _mapper;
-        public ProductRepository(SqlServeContext context, IMapper mapper)
+        public ProductRepository(SqlServerContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -26,7 +26,7 @@ namespace GeekShooping.ProductApi.Repository
 
         public async Task<ProductVO> FindById(long Id)
         {
-            ProductModel product = await _context.Products.Where(p => p.Id == Id).FirstOrDefaultAsync();
+            ProductModel product = await _context.Products.Where(p => p.Id == Id).FirstOrDefaultAsync()?? new ProductModel();
             return _mapper.Map<ProductVO>(product);
         }
 
@@ -50,8 +50,8 @@ namespace GeekShooping.ProductApi.Repository
         {
             try
             {
-                ProductModel product = await _context.Products.Where(p => p.Id == Id).FirstOrDefaultAsync();
-                if (product == null) {
+                ProductModel product = await _context.Products.Where(p => p.Id == Id).FirstOrDefaultAsync() ?? new ProductModel();
+                if (product.Id <= 0) {
                     return false;
                 }
                 _context.Products.Remove(product);

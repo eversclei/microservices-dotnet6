@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GeekShooping.ProductApi.Migrations
 {
-    [DbContext(typeof(SqlServeContext))]
-    partial class SqlServeContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(SqlServerContext))]
+    partial class SqlServerContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

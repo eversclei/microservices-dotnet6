@@ -6,11 +6,12 @@ using GeekShooping.ProductApi.Model.Context;
 using GeekShooping.ProductApi.Repository;
 using GeekShooping.ProductApi.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration["ConnectionString:DefaultConnection"];
-builder.Services.AddDbContext<SqlServeContext>(options =>
+builder.Services.AddDbContext<SqlServerContext>(options =>
     options.UseSqlServer(connectionString));
 
 IMapper mapper = MappingConfig.ResgisterMaps().CreateMapper();
@@ -22,7 +23,10 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Geek store", Version = "v1" });
+});
 
 var app = builder.Build();
 

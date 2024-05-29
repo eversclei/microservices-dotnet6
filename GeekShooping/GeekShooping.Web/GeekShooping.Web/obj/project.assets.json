@@ -944,9 +944,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cursos\\eversclei\\microservices-dotnet6\\GeekShooping\\GeekShooping.Web\\GeekShooping.Web\\GeekShooping.Web.csproj",
-      "projectName": "GeekShooping.Web",
-      "projectPath": "D:\\Cursos\\eversclei\\microservices-dotnet6\\GeekShooping\\GeekShooping.Web\\GeekShooping.Web\\GeekShooping.Web.csproj",
+      "projectUniqueName": "D:\\Cursos\\eversclei\\microservices-dotnet6\\GeekShooping\\GeekShooping.Web\\GeekShooping.Web\\GeekShopping.Web.csproj",
+      "projectName": "GeekShopping.Web",
+      "projectPath": "D:\\Cursos\\eversclei\\microservices-dotnet6\\GeekShooping\\GeekShooping.Web\\GeekShooping.Web\\GeekShopping.Web.csproj",
       "packagesPath": "C:\\Users\\evers\\.nuget\\packages\\",
       "outputPath": "D:\\Cursos\\eversclei\\microservices-dotnet6\\GeekShooping\\GeekShooping.Web\\GeekShooping.Web\\obj\\",
       "projectStyle": "PackageReference",

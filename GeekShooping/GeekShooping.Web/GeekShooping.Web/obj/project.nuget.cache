@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dKysA7SfLZX61myVGHQoruvV4yuRWXvsBRxbmexK4VvfStjiuSuIiib0S86x6w2Sh3iF9WR5JFJwOU9vijkysQ==",
+  "dgSpecHash": "OlcJo7VTDzBWGIVMX5AFb2uibuGddggCIMZ7/7GOkpqzQDvf3mwe+MERbspPkZ78D23jG7AotAPcy58jfLv3Ng==",
   "success": true,
-  "projectFilePath": "D:\\Cursos\\eversclei\\microservices-dotnet6\\GeekShooping\\GeekShooping.Web\\GeekShooping.Web\\GeekShooping.Web.csproj",
+  "projectFilePath": "D:\\Cursos\\eversclei\\microservices-dotnet6\\GeekShooping\\GeekShooping.Web\\GeekShooping.Web\\GeekShopping.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\evers\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.28\\microsoft.aspnetcore.mvc.razor.extensions.6.0.28.nupkg.sha512",
     "C:\\Users\\evers\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.28\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.28.nupkg.sha512",

@@ -1,10 +1,10 @@
-﻿using GeekShooping.ProductApi.Data.ValueObjects;
-using GeekShooping.ProductApi.Repository.Interfaces;
+﻿using GeekShopping.ProductApi.Data.ValueObjects;
+using GeekShopping.ProductApi.Repository.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace GeekShooping.ProductApi.Controllers
+namespace GeekShopping.ProductApi.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
@@ -34,7 +34,7 @@ namespace GeekShooping.ProductApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<IEnumerable<ProductVO>>> Create(ProductVO productVo)
+        public async Task<ActionResult<IEnumerable<ProductVO>>> Create([FromBody] ProductVO productVo)
         {
             if (productVo == null) return BadRequest();
             var product = await _productRepository.Create(productVo);
@@ -43,7 +43,7 @@ namespace GeekShooping.ProductApi.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<IEnumerable<ProductVO>>> Update(ProductVO productVo)
+        public async Task<ActionResult<IEnumerable<ProductVO>>> Update([FromBody] ProductVO productVo)
         {
             if (productVo == null) return BadRequest();
             var product = await _productRepository.Update(productVo);

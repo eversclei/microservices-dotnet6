@@ -1,9 +1,9 @@
-﻿using GeekShooping.ProductApi.Model.Base;
+﻿using GeekShopping.ProductApi.Model.Base;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GeekShooping.ProductApi.Model
+namespace GeekShopping.ProductApi.Model
 {
     [Table("product")]
     public class ProductModel: BaseEntity

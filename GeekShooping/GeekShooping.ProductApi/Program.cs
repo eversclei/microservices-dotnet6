@@ -1,15 +1,14 @@
 
 
 using AutoMapper;
-using GeekShooping.ProductApi.Config;
-using GeekShooping.ProductApi.Model.Context;
-using GeekShooping.ProductApi.Repository;
-using GeekShooping.ProductApi.Repository.Interfaces;
+using GeekShopping.ProductApi.Config;
+using GeekShopping.ProductApi.Model.Context;
+using GeekShopping.ProductApi.Repository;
+using GeekShopping.ProductApi.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
 var connectionString = builder.Configuration["ConnectionString:DefaultConnection"];
 builder.Services.AddDbContext<SqlServerContext>(options =>
     options.UseSqlServer(connectionString));

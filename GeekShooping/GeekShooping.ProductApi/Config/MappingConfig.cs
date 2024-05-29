@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using GeekShooping.ProductApi.Data.ValueObjects;
-using GeekShooping.ProductApi.Model;
+using GeekShopping.ProductApi.Data.ValueObjects;
+using GeekShopping.ProductApi.Model;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace GeekShooping.ProductApi.Config
+namespace GeekShopping.ProductApi.Config
 {
     public class MappingConfig
     {

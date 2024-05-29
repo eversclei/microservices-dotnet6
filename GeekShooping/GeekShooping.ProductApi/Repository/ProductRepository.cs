@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using GeekShooping.ProductApi.Data.ValueObjects;
-using GeekShooping.ProductApi.Model;
-using GeekShooping.ProductApi.Model.Context;
-using GeekShooping.ProductApi.Repository.Interfaces;
+using GeekShopping.ProductApi.Data.ValueObjects;
+using GeekShopping.ProductApi.Model;
+using GeekShopping.ProductApi.Model.Context;
+using GeekShopping.ProductApi.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace GeekShooping.ProductApi.Repository
+namespace GeekShopping.ProductApi.Repository
 {
     public class ProductRepository : IProductRepository
     {

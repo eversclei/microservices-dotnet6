@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace GeekShooping.ProductApi.Migrations
+namespace GeekShopping.ProductApi.Migrations
 {
     /// <inheritdoc />
     public partial class AddProductDataTableOnDb : Migration

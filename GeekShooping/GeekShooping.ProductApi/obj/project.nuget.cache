@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Se/v0TjUntY+Ql4vcNEVS6wj6lcbUWH+oIcoYu0CbaPuDQJ1whL5uwVKbfopM5j03O3oOWGQsbBOVlVc0Jx83g==",
+  "dgSpecHash": "TBAkYguAeBiTfiDMfsEG52sw0BqO8jODyJuBQV4JDHmcQIA9PoJ3g6MkNkac1sEprkRmWttUHpjMavwZblIC6g==",
   "success": true,
-  "projectFilePath": "D:\\Cursos\\eversclei\\microservices-dotnet6\\GeekShooping\\GeekShooping.ProductApi\\GeekShooping.ProductApi.csproj",
+  "projectFilePath": "D:\\Cursos\\eversclei\\microservices-dotnet6\\GeekShooping\\GeekShooping.ProductApi\\GeekShopping.ProductApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\evers\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\evers\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

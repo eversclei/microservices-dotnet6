@@ -1,7 +1,6 @@
 ﻿using GeekShopping.Web.Models;
 using GeekShopping.Web.Services.IServices;
 using GeekShopping.Web.Util;
-using System.Reflection;
 
 namespace GeekShopping.Web.Services
 {

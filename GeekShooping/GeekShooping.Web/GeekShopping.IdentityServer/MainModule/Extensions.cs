@@ -2,11 +2,11 @@
 // See LICENSE in the project root for license information.
 
 
-using System;
 using Duende.IdentityServer.Models;
+using GeekShopping.IdentityServer.MainModule.Account;
 using Microsoft.AspNetCore.Mvc;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace GeekShopping.IdentityServer.MainModule
 {
     public static class Extensions
     {

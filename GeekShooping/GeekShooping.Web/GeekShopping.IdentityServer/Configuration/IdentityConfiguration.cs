@@ -48,7 +48,7 @@ namespace GeekShopping.IdentityServer.Configuration
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         IdentityServerConstants.StandardScopes.Email,
-                        "geek_shoppings"
+                        "geek_shopping"
                     }
                 }
             };

@@ -14,7 +14,10 @@ namespace GeekShopping.IdentityServer
             var builder = WebApplication.CreateBuilder(args);
   
             var connectionString = builder.Configuration["ConnectionString:DefaultConnection"];
+            
             builder.Services.AddDbContext<SqlServerContext>(options => options.UseSqlServer(connectionString));
+            // Add services to the container.
+            
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<SqlServerContext>().AddDefaultTokenProviders();
             builder.Services.AddIdentityServer(options =>
             {
@@ -28,10 +31,10 @@ namespace GeekShopping.IdentityServer
             .AddInMemoryClients(IdentityConfiguration.Clients)
             .AddAspNetIdentity<ApplicationUser>();
 
+            builder.Services.AddControllersWithViews();
             builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
-            // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            
 
             var app = builder.Build();
 

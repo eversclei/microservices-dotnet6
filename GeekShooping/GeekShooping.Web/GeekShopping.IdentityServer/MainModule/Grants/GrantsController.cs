@@ -12,7 +12,7 @@ using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Stores;
 using Microsoft.AspNetCore.Authorization;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace GeekShopping.IdentityServer.MainModule.Device
 {
     /// <summary>
     /// This sample controller allows a user to revoke grants given to clients

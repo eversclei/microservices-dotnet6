@@ -16,7 +16,7 @@ using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Validation;
 using IdentityModel;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace GeekShopping.IdentityServer.MainModule.Consent
 {
     /// <summary>
     /// This controller processes the consent UI

@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace GeekShopping.IdentityServer.MainModule.Account
 {
     [SecurityHeaders]
     [AllowAnonymous]

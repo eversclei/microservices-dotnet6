@@ -19,7 +19,8 @@ builder.Services.AddAuthentication(options =>
     options.GetClaimsFromUserInfoEndpoint = true;
     options.ClientId = "geek_shopping";
     options.ClientSecret = "my_super_secret";
-    options.ResponseMode = "code";
+    //options.ResponseMode = "code";
+    options.ResponseType = "code";
     options.ClaimActions.MapJsonKey("role", "role", "role");
     options.ClaimActions.MapJsonKey("sub", "sub", "sub");
     options.TokenValidationParameters.NameClaimType = "name";
@@ -27,9 +28,6 @@ builder.Services.AddAuthentication(options =>
     options.Scope.Add("geek_shopping");
     options.SaveTokens = true;
 });
-
-
-
 
 var app = builder.Build();
 
